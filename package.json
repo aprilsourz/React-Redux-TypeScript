@@ -1,0 +1,30 @@
+{
+  "name": "react-redux-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arlofeirman/React-Redux-TypeScript.git"
+  },
+  "author": "Arlo Feirman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arlofeirman/React-Redux-TypeScript/issues"
+  },
+  "homepage": "https://github.com/arlofeirman/React-Redux-TypeScript#readme",
+  "dependencies": {
+    "@types/react": "^16.4.8",
+    "@types/react-dom": "^16.0.7",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.0",
+    "source-map-loader": "^0.2.3",
+    "typescript": "^3.0.1"
+  }
+}
