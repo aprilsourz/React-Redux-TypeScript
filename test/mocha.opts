@@ -1,4 +1,4 @@
 --require raf/polyfill
 --require jsdom-global/register
 --require ./test/testSetup.js
-./src/**/*.spec.js
+./**/*.spec.tsx
