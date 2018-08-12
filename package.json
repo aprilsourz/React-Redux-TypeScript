@@ -17,18 +17,19 @@
   },
   "homepage": "https://github.com/arlofeirman/React-Redux-TypeScript#readme",
   "dependencies": {
-    "@material-ui/core": "^1.4.3",
-    "@types/react": "^16.4.8",
-    "@types/react-dom": "^16.0.7",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-redux": "^5.0.7",
-    "redux": "^4.0.0",
-    "reselect": "^3.0.1"
+    "@material-ui/core": "1.4.3",
+    "@types/react": "16.4.8",
+    "@types/react-dom": "16.0.7",
+    "@types/react-redux": "^6.0.6",
+    "react": "16.4.2",
+    "react-dom": "16.4.2",
+    "react-redux": "5.0.7",
+    "redux": "4.0.0",
+    "reselect": "3.0.1"
   },
   "devDependencies": {
-    "awesome-typescript-loader": "^5.2.0",
-    "source-map-loader": "^0.2.3",
-    "typescript": "^3.0.1"
+    "awesome-typescript-loader": "5.2.0",
+    "source-map-loader": "0.2.3",
+    "typescript": "3.0.1"
   }
 }
