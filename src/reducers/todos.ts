@@ -1,6 +1,5 @@
-import Todo from 'models/Todo'
-import { Action } from 'actions/Action'
-import { ActionTypes } from 'actions/todos'
+import Todo from '../models/Todo'
+import { ActionTypes, Action } from '../actions/todos'
 
 export interface State {
   todos: Todo[]
