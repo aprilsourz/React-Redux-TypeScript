@@ -22,6 +22,7 @@
     "@types/react-dom": "^16.0.7",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
     "redux": "^4.0.0",
     "reselect": "^3.0.1"
   },
