@@ -1,9 +1,14 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import { Provider } from 'react-redux'
+import store from './store'
 
-import { Test } from "./components/Test";
+
+import App from './components/App'
 
 ReactDOM.render(
-    <Test compiler="TypeScript" framework="React" />,
+    <Provider store={store}>
+        <App />
+    </Provider>,
     document.getElementById("example")
-);
+)
