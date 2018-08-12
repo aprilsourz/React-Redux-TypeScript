@@ -10,7 +10,7 @@ let nextId = 0
 
 export interface AddTodoAction { type: ActionTypes.ADD_TODO, payload: { todo: Todo } }
 export interface ToggleTodoAction { type: ActionTypes.TOGGLE_TODO, payload: { todoId: number } }
-export interface InitAction { type: '', payload: {} }
+export interface InitAction { type: 'init', payload: {} }
 
 export function addTodo(name: string): AddTodoAction {
   return {
