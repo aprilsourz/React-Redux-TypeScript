@@ -6,6 +6,10 @@ export interface State {
   todos: Todo[]
 }
 
+export const initialState: State = {
+  todos: []
+}
+
 export function reducer(state: State = initialState, action: Action) {
 
   switch (action.type) {
