@@ -1,4 +1,4 @@
-# React-Redux-TypeScript
+# React/Redux andTypeScript
 The purpose of this repository is to learn TypeScript and to practice unit testing React/Redux code. 
 
 ### Tech Used
