@@ -14,5 +14,5 @@ The purpose of this repository is to learn TypeScript and to practice unit testi
 - `npm install` from the root directory. 
 
 ### Commands
-- `webpack` from the root directory to compile the app 
-- `npm test` from the root directory to run the unit tests
+- `webpack` from the root directory to compile the app,
+- `npm test` from the root directory to run the unit tests.
