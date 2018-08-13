@@ -9,7 +9,6 @@ import { expect } from 'chai'
 describe('<App />', () => {
   it('should return the initial state', () => {
     expect(reducer(undefined, { payload: {}, type: 'init' })).deep.equal(initialState)
-
   })
 
   it('should handle action ADD_TODO', () => {
@@ -18,6 +17,7 @@ describe('<App />', () => {
         { name: 'Groceries', done: false, id: 1 }
       ]
     }
+
     expect(reducer({ todos: [] }, addTodo('Groceries'))).deep.equal(expectedState)
   })
 

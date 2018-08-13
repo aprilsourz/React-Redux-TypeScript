@@ -10,5 +10,4 @@ describe('<App />', () => {
     const wrapper = shallow(<App />);
     expect(wrapper).to.be.ok
   })
-
 })
