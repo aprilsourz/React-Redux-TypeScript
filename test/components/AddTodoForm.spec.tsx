@@ -4,11 +4,13 @@ import { shallow, mount } from 'enzyme'
 import AddTodoForm from '../../src/components/AddTodoForm'
 import * as sinon from 'sinon'
 
-
-
+const sandbox = sinon.createSandbox()
 
 
 describe('<AddTodoForm />', () => {
+  afterEach(() => {
+    sandbox.restore()
+  })
 
   it('should render', () => {
     const props = { handleSubmit: null }
@@ -50,6 +52,37 @@ describe('<AddTodoForm />', () => {
 
     expect(wrapper.find('input').props().value).to.equal('test')
   })
+
+  it('should call submit function with no value', () => {
+    const props = { handleSubmit: null }
+    sandbox.spy(AddTodoForm.prototype, 'handleSubmit')
+    const wrapper = shallow(<AddTodoForm {...props} />)
+
+    wrapper.find('form').first().simulate('submit', { preventDefault: sinon.stub() })
+    expect(AddTodoForm.prototype.handleSubmit.calledOnce).to.be.true
+  })
+
+  it('should not call props.handleSubmit with no value', () => {
+    const props = { handleSubmit: () => null }
+    sandbox.spy(props, 'handleSubmit')
+    const wrapper = shallow(<AddTodoForm {...props} />)
+
+    wrapper.find('form').first().simulate('submit', { preventDefault: sinon.stub() })
+    expect(props.handleSubmit.callCount).to.equal(0)
+  })
+
+  it('should call props.handleSubmit with value', () => {
+    const props = { handleSubmit: () => null }
+    sandbox.spy(props, 'handleSubmit')
+    const wrapper = shallow(<AddTodoForm {...props} />)
+
+    wrapper.setState({ value: 'test' })
+    wrapper.find('form').first().simulate('submit', { preventDefault: sinon.stub() })
+
+    expect(props.handleSubmit.calledOnce).to.be.true
+  })
+
+
 
 
 
