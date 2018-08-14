@@ -6,7 +6,7 @@ import { expect } from 'chai'
 
 
 
-describe('<App />', () => {
+describe('reducers', () => {
   it('should return the initial state', () => {
     expect(reducer(undefined, { payload: {}, type: 'init' })).deep.equal(initialState)
   })
